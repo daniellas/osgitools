@@ -12,7 +12,7 @@ import java.lang.annotation.Target;
  * @author daniel.las
  *
  */
-@Retention(RetentionPolicy.SOURCE)
+@Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @Documented
 public @interface ImportPackages {
