@@ -70,6 +70,6 @@ In that case your Maven Bundle Plugin configuration can be stripped to:
 
 Latest rrelease version is **1.0.2**
 
-1. git clone <git@github.com:daniellas/osgitools.git>
+1. git clone `git@github.com:daniellas/osgitools.git`
 2. git checkout tags/osgitools-1.0.2
 3. mvn clean install
