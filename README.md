@@ -68,8 +68,8 @@ In that case your Maven Bundle Plugin configuration can be stripped to:
 ```
 ## Installation
 
-Latest release version is **1.0.3**
+Latest release version is **1.0.4**
 
 1. git clone `git@github.com:daniellas/osgitools.git`
-2. git checkout tags/osgitools-1.0.3
+2. git checkout tags/osgitools-1.0.4
 3. mvn clean install
