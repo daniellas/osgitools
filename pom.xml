@@ -16,6 +16,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <Embed-Dependency>*;scope=runtime</Embed-Dependency>
+                    <obrRepository>NONE</obrRepository>
                     <instructions>
                         <_noee>true</_noee>
                         <Export-Package>
