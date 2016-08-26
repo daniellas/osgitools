@@ -14,7 +14,7 @@ public class PackageImports {
 }
 ```
 
-And add configure Maven Bundle Plugin in you project pom.xml like this:
+and configure Maven Bundle Plugin in you project pom.xml like this:
 
 ```xml
 <plugin>
@@ -25,6 +25,30 @@ And add configure Maven Bundle Plugin in you project pom.xml like this:
         <instructions>
             <Import-Package>
                 !com.lynx.osgitools,
+                *
+            </Import-Package>
+        </instructions>
+    </configuration>
+</plugin>
+```
+
+Above configuration will cause:
+
+* Maven Bundle Plugin will add appropriate packages for all classes used in your project - *** (asterisk) ** in `<Import-Package>` is responsible for that
+* Since you added classes to `@ImportPackages` value, their packages will be added to your manifest   
+
+Osgitools it OSGI bundle itself, so you can install it in your container and omit **!com.lynx.osgitools** 
+
+In that case your Maven Bundle Plugin configuration can be stripped to:
+
+```xml
+<plugin>
+    <groupId>org.apache.felix</groupId>
+    <artifactId>maven-bundle-plugin</artifactId>
+    <version>2.5.3</version>
+    <configuration>
+        <instructions>
+            <Import-Package>
                 *
             </Import-Package>
         </instructions>
