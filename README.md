@@ -4,6 +4,8 @@ This library provides **@ImportPackages** annotation than can be used as marker 
 
 Import-Package manifest entry is required in OSGI environment, so if you don't use OSGI, don't bother.
 
+It took way more time to write this readme than create the code. You may treat this as an explanation how to simplify required manifest entries generation.
+
 ## Usage
 
 Just annotate any class in your project like this:
